@@ -5,17 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-puts "Destroy previous greetings"
 
 Salute.destroy_all
 
-puts "Five new greetings are created"
-
-salutes = Salute.create([
+Salute.create!(
+  [
     { body: 'Salute' },
     { body: 'Assalam Alaykum' },
     { body: 'Hello' },
     { body: 'Bonjour' },
     { body: 'Ciao' },
     { body: 'Namaste' }
-])
+  ]
+);
