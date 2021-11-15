@@ -8,7 +8,7 @@ module Api
 
       def show
         @salute = Salute.find(params[:id])
-        render json: @salute
+        render json: @greeting
       end
     end
   end
