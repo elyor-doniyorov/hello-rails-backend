@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Salute.destroy_all
+
+Salute.create!(
+  [
+    { body: 'Salute' },
+    { body: 'Assalam Alaykum' },
+    { body: 'Hello' },
+    { body: 'Bonjour' },
+    { body: 'Ciao' },
+    { body: 'Namaste' }
+  ]
+);
